@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.contacts.ContactFragment">
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="747dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="738dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="404dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textPhone"
+        android:layout_width="740dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="664dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="491dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="940dp"
+        android:text="Add Contact"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/emailHome"
+        android:layout_width="244dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="548dp"
+        android:checked="true"
+        android:text="Home"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/emailWork"
+        android:layout_width="310dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="548dp"
+        android:text="Work"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/phoneHome"
+        android:layout_width="291dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="808dp"
+        android:checked="true"
+        android:text="Home"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/phoneMobile"
+        android:layout_width="308dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginBottom="321dp"
+        android:text="Mobile"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/dancing_script_regular"
+        android:text="@string/menu_contact"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

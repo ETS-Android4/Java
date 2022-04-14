@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="info.hccis.cis2250.flowershop.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="info.hccis.cis2250.flowershop.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="info.hccis.cis2250.flowershop.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="info.hccis.cis2250.flowershop.ui.about.AboutFragment"
+        android:label="@string/action_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="info.hccis.cis2250.flowershop.ui.help.HelpFragment"
+        android:label="@string/action_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_linear_layout"
+        android:name="info.hccis.cis2250.flowershop.ui.linearLayout.LinearLayoutFragment"
+        android:label="LinearLayout Demo"
+        tools:layout="@layout/fragment_linear_layout" />
+
+    <fragment
+        android:id="@+id/nav_recycler_view"
+        android:name="info.hccis.cis2250.flowershop.ui.customers.CustomersFragment"
+        android:label="Customers"
+        tools:layout="@layout/fragment_customers" />
+
+    <fragment
+        android:id="@+id/nav_customer_detail"
+        android:name="info.hccis.cis2250.flowershop.ui.customerDetail.CustomerDetailsFragment"
+        android:label="@string/menu_customer"
+        tools:layout="@layout/fragment_customer_details" />
+
+    <fragment
+        android:id="@+id/nav_contact_update"
+        android:name="info.hccis.cis2250.flowershop.ui.contacts.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="info.hccis.cis2250.flowershop.ui.camera.CameraFragment"
+        android:label="@string/action_photo"
+        tools:layout="@layout/fragment_contact" />
+
+</navigation>

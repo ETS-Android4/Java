@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.help.HelpFragment">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:fontFamily="@font/dancing_script_regular"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="100dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:text="Please submit the contact form if you have questions!"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/nameHelp"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/emailHelp"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/phoneHelp"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/messageHelp"
+        android:layout_width="match_parent"
+        android:layout_height="548dp"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:hint="Your Message"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+</LinearLayout>

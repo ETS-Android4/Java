@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.customerDetail.CustomerDetailsFragment">
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:fontFamily="@font/dancing_script_bold"
+        android:text="@string/customer_details"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailProvince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Province"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailPostalCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Postal Code"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailBirthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birth Date"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailLoyaltyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loyalty Card"
+        android:textAlignment="center"
+        android:textSize="28dp" />
+
+
+</LinearLayout>
