@@ -1,0 +1,48 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head th:include="fragments/head :: headerFragment">
+        <title></title>
+    </head>
+    <body>
+        <nav th:replace="fragments/navHeader :: navbar"></nav>
+
+        <div class="container">
+            <h2 class="title is-2 has-text-centered"<span th:text=#{cropTitle}></span></h2>
+
+            <div class="table-container">
+
+                <a th:href="@{/plants/add}" th:text="Add" class="button"></a>
+               
+                <table class="table centered is-striped">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px;"<span th:text=#{idVariable}></span></th>
+                            <th style="width: 150px;"<span th:text=#{seasonVariable}></span></th>
+                            <th style="width: 150px;"<span th:text=#{plantVariable}></span></th>
+                            <th style="width: 150px;"<span th:text=#{dayVariable}></span></th>
+                            <th style="width: 150px;"<span th:text=#{numberVariable}></span></th>
+                            <th><span th:text=#{action}></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="plantentry : ${plantentries}">
+                            <td th:text="${plantentry.id}"></td>
+                            <td th:text="${plantentry.plantSeason}"></td>
+                            <td th:text="${plantentry.plantName}"></td>
+                            <td th:text="${plantentry.plantDate}"></td>
+                            <td th:text="${plantentry.numberPlanted}"></td>
+                            <td><a th:href="@{/plants/edit(id=${plantentry.id})}">Edit</a>&nbsp;<a
+                                    th:href="@{/plants/delete(id=${plantentry.id})}">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+        <footer th:replace="fragments/footer :: footer"></footer>
+    </body>
+</html>

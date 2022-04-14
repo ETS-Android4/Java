@@ -1,0 +1,32 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+   <head th:include="fragments/head :: headerFragment">
+        <title></title>
+    </head>
+    <body>
+    <nav th:replace="fragments/navHeader :: navbar"></nav>
+    <div class="container">
+         <h2 class="title is-2 has-text-centered"<span th:text=#{findTitle}></span>></h2>
+         
+            <form th:object="${plantentry}" action="/plants/findSubmit" th:action="@{/plants/findSubmit}" method="post" class="form-horizontal">
+                <fieldset>
+                    <p th:text="${message}"></p>
+
+                        <div style="text-align: center;" class="field">
+                            <h2 class="subtext"<span th:text=#{findSubTitle}></span>></h2>
+                            <label class="label" for="plantName"<span th:text=#{plantVariable}></span>></label>                    
+                            <select name="plantName">
+                                <option th:each="plantName : ${plantNames}" th:value="${plantName}" th:text="${plantName}"></option>
+                            </select>
+                        </div>
+
+                    <div style="text-align: center;" class="form-actions">
+                        <button class="button" type="submit"<span th:text=#{find}></span></button>
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    
+      <footer th:replace="fragments/footer :: footer"></footer>
+    </body>
+</html>
