@@ -1,2 +1,0 @@
-This is an Android Application created for a Mobile Application Development course, coded in Java, using REST API.
-This project was created using Agile project manangment processes, including Agile Users Stories and the use of programming sprints.
